@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+	<div class="container">
+		<div class="row">
+			<h2>Accordion with Open / Close Arrows</h2>
+		</div>
+
+		<div class="accordion" id="accordion2">
+			<div class="accordion-group">
+			<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+			Collapsible Group Item #1 <i class="fas fa-chevron-down"></i>
+			</a>
+			</div>
+			<div id="collapseOne" class="accordion-body collapse">
+			<div class="accordion-inner">
+			Anim pariatur cliche...
+			</div>
+			</div>
+			</div>
+			<div class="accordion-group">
+			<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+			Collapsible Group Item #2 <i class="fas fa-chevron-down"></i>
+			</a>
+			</div>
+			<div id="collapseTwo" class="accordion-body collapse">
+			<div class="accordion-inner">
+			Anim pariatur cliche...
+			</div>
+			</div>
+			</div>
+		</div>
+  	</div>
+
+
+
+</body>
+</html>
+
+<style>
+	
+		[aria-expanded="true"] i {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+</style>

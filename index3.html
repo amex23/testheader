@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<h2>Accordion with Open / Close Arrows</h2>
+	</div>
+	<div class="accordion" id="accordion2">
+	<div class="accordion-group">
+	<div class="accordion-heading">
+	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+	Collapsible Group Item #1 <a class="toggle-btn" href="#">
+    Link
+  <span class="arrow"></span>
+</a>
+	</a>
+	</div>
+	<div id="collapseOne" class="accordion-body collapse">
+	<div class="accordion-inner">
+	Anim pariatur cliche...
+	</div>
+	</div>
+	</div>
+	<div class="accordion-group">
+	<div class="accordion-heading">
+	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+	Collapsible Group Item #2
+	</a>
+	</div>
+	<div id="collapseTwo" class="accordion-body collapse">
+	<div class="accordion-inner">
+	Anim pariatur cliche...
+	</div>
+	</div>
+	</div>
+	</div>
+  </div>
+	
+</body>
+</html>
+
+<script></script>
+
+<style>
+
+.accordion-toggle:after {
+    font-family: 'FontAwesome';
+    content: "\f078";    
+    float: right;
+}
+.accordion-opened .accordion-toggle:after {    
+    content: "\f054";    
+}
+
+</style>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+<link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet"> 
+</head>
+<body>
+<!------ Include the above in your HEAD tag ---------->
+	<div class="bg-red-400 w-full py-10">
+		<div class="accordion flex w-full bg-green-400 px-12 " id="accordion2">
+			<div class="accordion-group border-none bg-yellow-200 relative">
+				<div class="accordion-heading b-none bg-violet-400">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						Item1
+					</a>
+				</div>
+				<div id="collapseOne" class="accordion-body collapse bg-purple-400 ">
+						Anim pariatur cliche...
+				</div>
+			</div>
+
+			<div class="accordion-group border-none bg-yellow-200 relative">
+				<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+					Item2
+				</a>
+				</div>
+
+				<div id="collapseTwo" class="accordion-body collapse bg-purple-400 ">
+					Anim pariatur cliche...
+				</div>
+			</div>
+		</div>
+  	</div>
+
+</body>
+</html>
+
+<script>
+    $(document).on('show','.accordion', function (e) {
+         //$('.accordion-heading i').toggleClass(' ');
+         $(e.target).prev('.accordion-heading').addClass('accordion-opened');
+    });
+    
+    $(document).on('hide','.accordion', function (e) {
+        $(this).find('.accordion-heading').not($(e.target)).removeClass('accordion-opened');
+        //$('.accordion-heading i').toggleClass('fa-chevron-right fa-chevron-down');
+    });
+</script>
+
+<style>
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+.accordion-toggle:after {
+    font-family: 'FontAwesome';
+    content: "\f078";    
+    /* float: right; */
+}
+.accordion-opened .accordion-toggle:after {    
+    /* content: "\f054";     */
+    content: "\f077";    
+}
+</style>
